@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Note & Password Manager</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <h1>"Notes & Password Manager"</h1>
+    <div class="container">
+        <div class="notes-section">
+            <h2>My Notes</h2>
+            <ul id="notes-list"></ul>
+            <form id="note-form">
+                <textarea id="note-input" placeholder="Enter your note..."></textarea>
+                <button type="submit">Add Note</button>
+            </form>
+        </div>
+        <div class="passwords-section">
+            <h2>My Passwords</h2>
+            <ul id="password-list"></ul>
+            <form id="password-form">
+                <input type="text" id="website-input" placeholder="Website">
+                <input type="text" id="username-input" placeholder="Username">
+                <input type="password" id="password-input" placeholder="Password">
+                <button type="submit">Add Password</button>
+            </form>
+        </div>
+    </div>
+    <!-- Include CryptoJS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="sc.js"></script>
+</body>
+</html>
